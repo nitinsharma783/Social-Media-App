@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const {MONGOURI} = require('./keys');
 const cors = require('cors')
 const app = express();
-const PORT = 2048
+const PORT = process.env.PORT || 2048
 
 
 mongoose.connection.on("connected",()=>{
